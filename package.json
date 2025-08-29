@@ -7,13 +7,16 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:surge": "vite build && surge ./dist hugo-lisa-remerciement.surge.sh",
+    "deploy:ghp": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "@eslint/js": "^9.33.0",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@types/react": "^19.1.10",
