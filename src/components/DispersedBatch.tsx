@@ -57,6 +57,7 @@ const DispersedBatch: React.FC<DispersedBatchProps> = ({ items, onSelect }) => {
               <Thumbnail
                 title={item.title}
                 thumbnailUrl={item.thumbnailUrl}
+                youtubeUrl={item.youtubeUrl} // Ajout de cette propriété
                 onClick={() => onSelect(item)}
                 className="animate-tilt animate-fadeUp"
               />

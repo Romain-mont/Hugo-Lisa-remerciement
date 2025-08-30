@@ -44,6 +44,7 @@ const Gallery: React.FC<GalleryProps> = ({ items, onSelect }) => {
             <Thumbnail
               title={item.title}
               thumbnailUrl={item.thumbnailUrl}
+              youtubeUrl={item.youtubeUrl} // Ajout de cette propriété
               onClick={() => onSelect(item)}
               className={`animate-tilt ${offsets[idx % offsets.length]} animate-fadeUp`}
             />

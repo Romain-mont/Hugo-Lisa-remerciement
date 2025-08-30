@@ -3,7 +3,7 @@ import React from 'react'
 export type ThumbnailProps = {
   title: string
   thumbnailUrl: string
-  youtubeUrl: string
+  youtubeUrl?: string // Rend cette propriété optionnelle
   onClick: () => void
   className?: string
   style?: React.CSSProperties
