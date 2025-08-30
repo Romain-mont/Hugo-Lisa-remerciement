@@ -3,6 +3,7 @@ import React from 'react'
 export type ThumbnailProps = {
   title: string
   thumbnailUrl: string
+  youtubeUrl: string
   onClick: () => void
   className?: string
   style?: React.CSSProperties

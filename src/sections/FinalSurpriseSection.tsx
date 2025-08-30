@@ -10,7 +10,7 @@ const FinalSurpriseSection: React.FC = () => {
       <div className="container-elegant">
         <div className={`mx-auto max-w-5xl text-center ${inView ? 'animate-fadeUp' : 'opacity-0 translate-y-4'}`}>
           <h2 className="text-4xl font-semibold tracking-tight text-black md:text-7xl">
-            Voici une petite surprise de la part de tous les invités
+            Vos invités ont voulu vous laisser un petit mot...
           </h2>
         </div>
       </div>

@@ -5,6 +5,7 @@ import LandingSection from './sections/LandingSection'
 import SurpriseMessageSection from './sections/SurpriseMessageSection'
 import GallerySection from './sections/GallerySection'
 import FinalSurpriseSection from './sections/FinalSurpriseSection'
+import WitnessesSection from './sections/WitnessesSection'
 
 // Page principale : galerie + modal lecteur YouTube
 function App() {
@@ -18,10 +19,12 @@ function App() {
         <LandingSection />
         {/* 2. Merci pour tout… */}
         <SurpriseMessageSection />
-        {/* 3. Voici une petite surprise... (noir) */}
+        {/* 3. Vos invités ont voulu vous laisser un petit mot... */}
         <FinalSurpriseSection />
-        {/* Galerie */}
+        {/* 4. Galerie vidéo */}
         <GallerySection onSelectItem={(item) => setSelected(item)} />
+        {/* 5. Message des témoins */}
+        <WitnessesSection />
       </main>
 
       {selected && (
