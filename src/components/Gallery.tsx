@@ -38,7 +38,7 @@ const Gallery: React.FC<GalleryProps> = ({ items, onSelect }) => {
   return (
     <div className="p-3 md:p-6">
       {/* Grille en colonnes variables, espacée et aérée */}
-      <div className="columns-1 gap-4 sm:columns-2 md:columns-3 lg:columns-4 [column-fill:_balance]">
+      <div className="columns-1 gap-4 sm:columns-2 md:columns-2 lg:columns-3 xl:columns-4 [column-fill:_balance]">
         {current.map((item, idx) => (
           <div key={item.id} className="mb-4 break-inside-avoid">
             <Thumbnail

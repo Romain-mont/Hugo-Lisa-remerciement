@@ -12,32 +12,32 @@ export type DispersedBatchProps = {
 const DispersedBatch: React.FC<DispersedBatchProps> = ({ items, onSelect }) => {
   const { isXs, isSm, isMd } = useBreakpoint()
 
-  // Positions mobiles plus grandes et espacées verticalement
+  // Positions mobiles ajustées pour éviter les débordements
   const mobilePositions: Array<{ top: string; left: string; offset?: string }> = [
-    { top: '4%', left: '8%' },
-    { top: '16%', left: '52%', offset: 'translate-y-1' },
-    { top: '28%', left: '6%', offset: '-translate-y-1' },
-    { top: '40%', left: '54%' },
-    { top: '52%', left: '10%', offset: 'translate-x-1' },
-    { top: '64%', left: '60%' },
-    { top: '74%', left: '14%', offset: '-translate-x-1' },
-    { top: '84%', left: '58%' },
-    { top: '92%', left: '8%' },
-    { top: '96%', left: '64%' },
+    { top: '5%', left: '10%' },
+    { top: '15%', left: '50%', offset: 'translate-y-1' },
+    { top: '25%', left: '12%', offset: '-translate-y-1' },
+    { top: '35%', left: '48%' },
+    { top: '45%', left: '14%', offset: 'translate-x-1' },
+    { top: '55%', left: '52%' },
+    { top: '65%', left: '18%', offset: '-translate-x-1' },
+    { top: '75%', left: '50%' },
+    { top: '85%', left: '10%' },
+    { top: '95%', left: '54%' },
   ]
 
-  // Positions desktop
+  // Positions desktop ajustées pour un meilleur équilibre
   const desktopPositions: Array<{ top: string; left: string; offset?: string }> = [
-    { top: '6%', left: '4%', offset: 'translate-y-1' },
-    { top: '8%', left: '30%', offset: '-translate-y-1' },
-    { top: '5%', left: '58%', offset: 'translate-x-1' },
-    { top: '10%', left: '82%', offset: '-translate-x-1' },
-    { top: '35%', left: '10%', offset: 'translate-y-2' },
-    { top: '32%', left: '40%', offset: '-translate-y-2' },
-    { top: '30%', left: '70%', offset: 'translate-x-1' },
-    { top: '62%', left: '16%', offset: '-translate-x-1' },
-    { top: '60%', left: '46%', offset: 'translate-y-1' },
-    { top: '66%', left: '76%', offset: '-translate-y-1' },
+    { top: '8%', left: '6%', offset: 'translate-y-1' },
+    { top: '12%', left: '28%', offset: '-translate-y-1' },
+    { top: '10%', left: '56%', offset: 'translate-x-1' },
+    { top: '14%', left: '80%', offset: '-translate-x-1' },
+    { top: '38%', left: '12%', offset: 'translate-y-2' },
+    { top: '36%', left: '42%', offset: '-translate-y-2' },
+    { top: '34%', left: '72%', offset: 'translate-x-1' },
+    { top: '66%', left: '18%', offset: '-translate-x-1' },
+    { top: '64%', left: '48%', offset: 'translate-y-1' },
+    { top: '70%', left: '78%', offset: '-translate-y-1' },
   ]
 
   const positions = useMemo(() => (isXs || isSm || isMd ? mobilePositions : desktopPositions), [isXs, isSm, isMd])
