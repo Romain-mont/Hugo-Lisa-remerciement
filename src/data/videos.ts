@@ -262,6 +262,18 @@ const provided: VideoItem[] = [
       thumbnailUrl: 'https://img.youtube.com/vi/KCTCaPlY9vM/hqdefault.jpg',
       youtubeUrl: 'https://youtube.com/shorts/KCTCaPlY9vM',
     },
+    {
+      id: 'JcdwqTLyiVs',
+      title: 'Vidéo 42',
+      thumbnailUrl: 'https://img.youtube.com/vi/JcdwqTLyiVs/hqdefault.jpg',
+      youtubeUrl: 'https://youtu.be/JcdwqTLyiVs',
+    },
+    {
+      id: 'G_XU0RttFUg',
+      title: 'Vidéo 42',
+      thumbnailUrl: 'https://img.youtube.com/vi/G_XU0RttFUg/hqdefault.jpg',
+      youtubeUrl: 'https://youtube.com/shorts/G_XU0RttFUg?feature=share',
+    },
 
 ]
 
